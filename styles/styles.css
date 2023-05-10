@@ -6,7 +6,7 @@
     flex-direction: column;
 }
 
-.page-grey{
+.page__intro_grey{
     background-color: #F6F2F2;
 }
 
@@ -35,23 +35,23 @@
 
 
 
-.header-navigation{
+.header__navigation{
     display: flex;
     flex-wrap: wrap;
 }
 
-.memu-item{
+.memu__item{
     display: flex;
     align-items: stretch;
     justify-content: center;
     min-height: 90px;
 }
 
-.memu-item:hover{
+.memu__item:hover{
     background-color: #FF3F40;
 }
 
-.menu-link{
+.menu__link{
     font-family: 'OpenSans';
     display: flex;
     align-items: center;
@@ -65,7 +65,7 @@
 
 /* intro */
 
-.page-content{
+.page__content{
     flex-grow: 1;
 }
 
@@ -74,7 +74,7 @@
     padding-bottom: 94px;
 }
 
-.intro-content{
+.intro__content{
     position: relative;
     bottom: 12px;
     width: 616px;
@@ -82,7 +82,7 @@
     margin-right: 74px;
 }
 
-.intro-heading{
+.intro__heading{
     margin: 0;
     font-size: 60px;
     line-height: 72px;
@@ -93,7 +93,7 @@
     letter-spacing: 1.5px;
 }
 
-.intro-text{
+.intro__text{
     font-family: 'Open+Sans', sans-serif;
     margin: 0;
     line-height: 28px;
@@ -117,14 +117,14 @@
     border-radius: 6px;
 }
 
-.button-red{
+.action-button_button_red{
     font-size: 18px;
     font-weight: 700;
     color: #fff;
     background-color: #FF2D2D;
 }
 
-.intro-image{
+.intro__image{
     position: relative;
     width: 554px;
     height: 360px;
