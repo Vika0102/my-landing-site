@@ -224,19 +224,19 @@
 }
 
 .service__heading_manage::before{
-    content: url(/img/Combined-shape.png);
+    content: url(../img/Combined-shape-1.png); 
 }
 
 .service__heading_ux::before{
-    content: url(/img/Combined-shape-2.png);
+    content: url(../img/Combined-shape-2.png);
 }
 
 .service__heading_logo::before{
-    content: url(/img/Combined-shape-3.png);
+    content: url(../img/Combined-shape-3.png);
 }
 
 .service__heading_anim::before{
-    content: url(/img/Combined-shape-4.png);
+    content: url(../img/Combined-shape-4.png);
 }
 
 .line{
