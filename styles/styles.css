@@ -1,9 +1,11 @@
 .page{
     font-family: 'Open+Sans', sans-serif;
-    margin: 0;
+    margin: 0 auto;
     font-size: 16px;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 1250px;
 }
 
 .page__intro_grey{
@@ -129,7 +131,7 @@
     position: relative;
     width: 554px;
     height: 360px;
-    left: 29px;
+    right: 29px;
 }
 
 .section{
@@ -139,8 +141,8 @@
     align-items: flex-start;
     max-width: 1250px;
     margin: 0 auto;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    /* padding-left: 1vw;
+    padding-right: 1vw; */
     padding-top: 102px;
 }
 
@@ -172,7 +174,7 @@
     margin: 0;
     line-height: 28px;
     margin-bottom: 50px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .action-button_white{
@@ -189,6 +191,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 44px;
+    padding-left: 1px;
 }
 
 /* service */
