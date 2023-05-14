@@ -10,6 +10,7 @@
 
 .page__intro_grey {
     background-color: #F6F2F2;
+    width: 100%;
     width: 1580px;
     height: 688px;
     margin: 0 -150px;
@@ -77,6 +78,7 @@
 /* intro */
 
 .page__content {
+    display: block;
     flex-grow: 1;
     margin: 0 auto;
 }
@@ -95,6 +97,8 @@
 }
 
 .intro__heading {
+    position: relative;
+    width: 100%;
     margin: 0;
     font-size: 60px;
     line-height: 72px;
@@ -102,6 +106,7 @@
     font-style: italic;
     text-transform: uppercase;
     letter-spacing: 1.5px;
+
 }
 
 .intro__text {
@@ -135,21 +140,24 @@
 
 .intro__image {
     position: relative;
+    width: 100%;
     width: 554px;
     height: 360px;
     right: 29px;
 }
 
 .section {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    width: 100%;
     max-width: 1250px;
     margin: 0 auto;
-    /* padding-left: 1vw;
-    padding-right: 1vw; */
-    padding-top: 102px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 184px;
 }
 
 /* services */
@@ -416,6 +424,7 @@
     max-width: 848px;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    padding-top: 40px;
 }
 
 .team__selected-about{
