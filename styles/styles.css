@@ -1,5 +1,5 @@
-.page{
-    font-family: 'Open+Sans', sans-serif;
+.page {
+    font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
     font-size: 16px;
     display: flex;
@@ -8,13 +8,17 @@
     max-width: 1250px;
 }
 
-.page__intro_grey{
+.page__intro_grey {
     background-color: #F6F2F2;
+    width: 1580px;
+    height: 688px;
+    margin: 0 -150px;
 }
+
 
 /* header */
 
-.header{
+.header {
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -27,7 +31,7 @@
     background: #000000;
 }
 
-.menu{
+.menu {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
@@ -37,24 +41,23 @@
 
 
 
-.header__navigation{
+.header__navigation {
     display: flex;
     flex-wrap: wrap;
 }
 
-.memu__item{
+.memu__item {
     display: flex;
     align-items: stretch;
     justify-content: center;
     min-height: 90px;
 }
 
-.memu__item:hover{
+.memu__item:hover {
     background-color: #FF3F40;
 }
 
-.menu__link{
-    font-family: 'OpenSans';
+.menu__link {
     display: flex;
     align-items: center;
     padding: 0 30px;
@@ -65,19 +68,24 @@
     text-transform: uppercase;
 }
 
+.activ_link {
+    background-color: #FF3F40;
+    text-decoration: none;
+}
+
 /* intro */
 
-.page__content{
+.page__content {
     flex-grow: 1;
     margin: 0 auto;
 }
 
-.intro{
+.intro {
     padding-top: 182px;
     padding-bottom: 94px;
 }
 
-.intro__content{
+.intro__content {
     position: relative;
     bottom: 12px;
     width: 616px;
@@ -85,19 +93,17 @@
     margin-right: 74px;
 }
 
-.intro__heading{
+.intro__heading {
     margin: 0;
     font-size: 60px;
     line-height: 72px;
     font-weight: 800;
     font-style: italic;
     text-transform: uppercase;
-    font-family: 'Open+Sans', sans-serif;
     letter-spacing: 1.5px;
 }
 
-.intro__text{
-    font-family: 'Open+Sans', sans-serif;
+.intro__text {
     margin: 0;
     line-height: 28px;
     max-width: 520px;
@@ -107,34 +113,33 @@
     margin-top: 36px;
 }
 
-.action-button{
+.action-button {
     box-sizing: border-box;
-    font-family: 'Open+Sans', sans-serif;
     display: flex;
     width: 228px;
     height: 56px;
-    padding: 0 16;
+    padding: 0 16px;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     border-radius: 6px;
 }
 
-.action-button_red{
+.action-button_red {
     font-size: 18px;
     font-weight: 700;
     color: #fff;
     background-color: #FF2D2D;
 }
 
-.intro__image{
+.intro__image {
     position: relative;
     width: 554px;
     height: 360px;
     right: 29px;
 }
 
-.section{
+.section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -148,44 +153,42 @@
 
 /* services */
 
-.services{
+.services {
     padding-top: 108px;
     padding-bottom: 52px;
 }
 
-.services__lead{
+.services__lead {
     flex: 1 1 150px;
     max-width: 502px;
     margin-right: 50px;
     margin-bottom: 50px;
 }
 
-.services__heading{
+.services__heading {
     position: relative;
-    font-family: 'Open+Sans', sans-serif;
+    font-weight: bold;
     font-size: 42px;
     bottom: 6px;
     margin-bottom: 28px;
-    text-transform: uppercase;  
+    text-transform: uppercase;
 }
 
-.services__text{
-    font-family: 'Open+Sans', sans-serif;
+.services__text {
     margin: 0;
     line-height: 28px;
     margin-bottom: 50px;
-    font-size: 16px;
+    font-size: 15px;
 }
 
-.action-button_white{
-    font-family: 'Open+Sans', sans-serif;
+.action-button_white {
     font-size: 18px;
     color: #FF2D2D;
     background-color: #fff;
     border: 2px solid #FF0000;
 }
 
-.services__blocks{
+.services__blocks {
     flex: 1 1;
     max-width: 610px;
     display: flex;
@@ -196,7 +199,7 @@
 
 /* service */
 
-.services{
+.services {
     flex: 1 1 288px;
     width: 1288px;
     max-height: 588px;
@@ -204,8 +207,8 @@
     margin-left: 16px;
 }
 
-.service__heading{
-    font-family: 'Open+Sans', sans-serif;
+.service__heading {
+    font-style: italic;
     margin: 0;
     letter-spacing: 1.5px;
     font-weight: 600;
@@ -214,34 +217,120 @@
     margin-top: -122px;
 }
 
-.service__heading::before{
+.service__heading::before {
     display: flex;
     width: 41px;
     height: 41px;
     margin-bottom: 22px;
 }
 
-.service__text{
+.service__text {
     margin: 0;
     line-height: 28px;
 }
 
-.service__heading_manage::before{
-    content: url(../img/Combined-shape-1.png); 
+.service__heading_manage::before {
+    content: url(../img/Combined-shape-1.png);
 }
 
-.service__heading_ux::before{
+.service__heading_ux::before {
     content: url(../img/Combined-shape-2.png);
 }
 
-.service__heading_logo::before{
+.service__heading_logo::before {
     content: url(../img/Combined-shape-3.png);
 }
 
-.service__heading_anim::before{
+.service__heading_anim::before {
     content: url(../img/Combined-shape-4.png);
 }
 
-.line{
+.line {
     border-bottom: 1px solid #ECECEC;
+}
+
+/* feature products */
+
+.feature {
+    padding-top: 104px;
+    padding-bottom: 52px;
+}
+
+.feature__header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 66px;
+}
+
+.feature__heading {
+    font-size: 42px;
+    padding-left: 14px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.feature__text {
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 522px;
+    margin: 0 auto 30px;
+}
+
+.header__line {
+    border: 1px solid #FF2D2D;
+    width: 134px;
+    max-height: 4px;
+}
+
+.products__filter {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.products__link {
+    position: relative;
+    left: 46px;
+    color: #000000;
+    margin-right: 56px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-style: italic;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.products__link_active {
+    color: #FF2D2D;
+}
+
+.products__link:hover {
+    color: #FF2D2D;
+}
+
+
+
+.products {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product {
+    flex: 1 1 20%;
+    max-width: 298px;
+    height: 292px;
+    margin-bottom: 18px;
+    object-fit: cover;
+}
+
+.product:hover {
+    cursor: pointer;
+    max-width: 352px;
 }
