@@ -1,27 +1,30 @@
+@font-face {font-family: 'OpenSans_Condensed-SemiBoldItalic';
+    font-weight: 600;
+    src: local('OpenSans_Condensed-SemiBoldItalic'), url('../fonts/OpenSans_Condensed-SemiBoldItalic.ttf') format('truetype');
+}
+
 .page {
     font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
     font-size: 16px;
-    display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1250px;
-    min-height: 100vh;
+    /* max-width: 1250px; */
 }
 
 .page__intro_grey {
     background-color: #F6F2F2;
     width: 100%;
-    width: 1580px;
+    max-width: 1580px;
     height: 688px;
-    margin: 0 -150px;
+    margin: 0 auto;
 }
 
 .page__header_grey{
     background-color: #F6F2F2;
     width: 100%;
-    width: 1580px;
-    margin: 0 -150px;
+    max-width: 1580px;
+    margin: 0 auto;
 }
 
 
@@ -99,13 +102,13 @@
 .intro__content {
     position: relative;
     bottom: 12px;
-    width: 616px;
+    width: 100%;
+    max-width: 616px;
     margin-bottom: 20px;
     margin-right: 74px;
 }
 
 .intro__heading {
-    position: relative;
     width: 100%;
     margin: 0;
     font-size: 60px;
@@ -118,6 +121,7 @@
 }
 
 .intro__text {
+    width: 100%;
     margin: 0;
     line-height: 28px;
     max-width: 520px;
@@ -176,6 +180,8 @@
 }
 
 .services__lead {
+    position: relative;
+    width: 100%;
     flex: 1 1 150px;
     max-width: 502px;
     margin-right: 50px;
@@ -192,6 +198,9 @@
 }
 
 .services__text {
+    position: relative;
+    width: 100%;
+    max-width: 540px;
     margin: 0;
     line-height: 28px;
     margin-bottom: 50px;
@@ -217,14 +226,17 @@
 /* service */
 
 .services {
+    width: 100%;
     flex: 1 1 288px;
-    width: 1288px;
+    flex-wrap: wrap;
+    max-width: 1288px;
     max-height: 588px;
     margin-bottom: 50px;
 }
 
 .service__heading {
-    font-style: italic;
+    font-family: 'OpenSans_Condensed-SemiBoldItalic', sans-serif;
+    /* font-style: italic; */
     margin: 0;
     letter-spacing: 1.5px;
     font-weight: 600;
@@ -510,19 +522,20 @@
 /* subscribe */
 
 .subscribe{
+    position: relative;
     box-sizing: border-box;
     width: 100%;
     max-width: 1580px;
-    margin: 68px auto;
+    margin: 86px auto;
     background-color: #2D2D2D;
-    /* padding-top: 124px; */
+    padding-top: 124px;
     padding-bottom: 148px;
 }
 
 .subscribe___header{
     width: 100%;
     max-width: 1580px;
-    margin: 0 auto;
+    margin: 0;
     text-align: center;
 }
 
@@ -586,10 +599,14 @@
 
 .feedback-contacts{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
     padding-top: 92px;
     padding-bottom: 110px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1442px;
 }
 
 .feedback-contacts::after{
@@ -644,7 +661,6 @@
 .feedback__form{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .feedback__input{
@@ -652,7 +668,7 @@
     padding-right: 54px;
     border: none;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 .feedback__name,
@@ -662,13 +678,13 @@
     font-size: 16px;
     width: 338px;
     height: 68px;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.15);
     padding: 22px;
     margin-bottom: 6px;
 }
 
 .feedback__email{
-    margin-left: 5px;
+    margin-left: 56px;
 }
 
 .feedback__message{
@@ -681,7 +697,7 @@
     margin-bottom: 44px;
     border: none;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.15);
     margin-top: 44px;
     padding: 22px;
 }
@@ -710,7 +726,7 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    right: -104px;
+    right: -70px;
     color: #fff;
     background-color: #2D2D2D;
     padding-left: 82px;
@@ -736,4 +752,34 @@
     margin: 0;
     line-height: 34px;
     margin-top: 16px;
+}
+
+/* footer */
+
+.footer{
+    background-color: #313030;
+    padding: 0;
+    min-height: 112px;
+    width: 100%;
+    max-width: 1580px;
+    margin: 0 auto;
+}
+
+.footer__content{
+    box-sizing: border-box;
+    padding: 52px 0 0;
+    color: #B8B8B8;
+}
+
+.footer__copyright{
+    margin: 0;
+    line-height: 26px;
+}
+
+.footer__link{
+    display: inline-block;
+}
+
+.footer__social-links > .footer__link:not(:last-child){
+    margin-right: 18px;
 }
