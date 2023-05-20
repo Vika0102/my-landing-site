@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,800;1,300;1,400;1,600;1,800&display=swap"
         rel="stylesheet">
+    <script async src="./img/menu.png"></script>
     <title>Лендинг проект</title>
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
 </head>
@@ -32,25 +33,44 @@
                         <a class="menu__link" href="#contact">Contact</a>
                     </li>
                 </ul>
+                <div class="popup-menu">
+                    <button class="popup-menu__button"></button>
+                    <ul class="popup-menu__list hide-popup">
+                        <li class="popup-menu__item">
+                            <a class="popup-menu__link" href="">Home</a>
+                        </li>
+                        <li class="popup-menu__item">
+                            <a class="popup-menu__link" href="">Portfolio</a>
+                        </li>
+                        <li class="popup-menu__item">
+                            <a class="popup-menu__link" href="">About us</a>
+                        </li>
+                        <li class="popup-menu__item">
+                            <a class="popup-menu__link" href="">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
-    </div>
-    <main class="page__content">
-        <div class="page__intro page__intro_grey">
-            <div class="intro section">
-                <div class="intro__content">
-                    <h1 class="intro__heading">our strong<br>organaisation</h1>
-                    <p class="intro__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do
-                        eiusmod<br>tempor incididunt ut labore et. ectetur adig ipis cing elit, sed do eiusmod<br>tempor
-                        incididunt.</p>
-                    <a href="" class="action-button action-button_red">Contact Us</a>
+
+        <main class="page__content">
+            <div class="page__intro page__intro_grey">
+                <div class="intro section">
+                    <div class="intro__content">
+                        <h1 class="intro__heading">our strong<br>organaisation</h1>
+                        <p class="intro__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do
+                            eiusmod<br>tempor incididunt ut labore et. ectetur adig ipis cing elit, sed do
+                            eiusmod<br>tempor
+                            incididunt.</p>
+                        <a href="" class="action-button action-button_red">Contact Us</a>
+                    </div>
+                    <a href="" class="intro__link">
+                        <img class="intro__image" src="./img/Vedio.svg" alt="" width="554" height="359">
+                    </a>
                 </div>
-                <a href="" class="intro__link">
-                    <img class="intro__image" src="./img/Vedio.svg" alt="" width="554" height="359">
-                </a>
             </div>
-        </div>
-        <div>
+            <div>
+            </div>
             <div class="section service">
                 <div class="services__lead">
                     <h2 class="services__heading section-heading">do you know we can<br>provide for you ?</h2>
@@ -96,136 +116,139 @@
                     </section>
                 </div>
             </div>
+    </div>
+    <section class="section feature">
+        <div class="feature__header" id="portfolio">
+            <h2 class="feature__heading section-heading">feature products</h2>
+            <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do eiusmod
+                tempor
+                incididunt ut labore et.</p>
+            <hr class="header__line feature__line">
         </div>
-        <section class="section feature">
-            <div class="feature__header">
-                <h2 class="feature__heading section-heading">feature products</h2>
-                <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do eiusmod tempor
-                    incididunt ut labore et.</p>
-                <hr class="header__line feature__line">
+        <ul class="products__filter">
+            <li class="products__item">
+                <a href="" class="products__link products__link_active">all</a>
+            </li>
+            <li class="products__item">
+                <a href="" class="products__link">print template</a>
+            </li>
+            <li class="products__item">
+                <a href="" class="products__link">web template</a>
+            </li>
+            <li class="products__item">
+                <a href="" class="products__link">user interface</a>
+            </li>
+            <li class="products__item">
+                <a href="" class="products__link">mock-up</a>
+            </li>
+        </ul>
+        <div class="products">
+            <img class="product" src="./img/work-1.jpg" alt="product">
+            <img class="product" src="./img/work-2.jpg" alt="product">
+            <img class="product" src="./img/work-3.jpg" alt="product">
+            <img class="product" src="./img/work-4.jpg" alt="product">
+            <img class="product" src="./img/work-5.jpg" alt="product">
+            <img class="product" src="./img/work-6.jpg" alt="product">
+            <img class="product" src="./img/work-7.jpg" alt="product">
+            <img class="product" src="./img/work-8.jpg" alt="product">
+        </div>
+    </section>
+    <section class="section team">
+        <div class="team__header" id="aboutus">
+            <h2 class="team__heading">Meet our team</h2>
+            <p class="team__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod
+                tempor incididut labore Ui / Ux , print template.</p>
+            <hr class="header__line team__line">
+        </div>
+        <div class="team__members">
+            <img class="team__selected-photo" src="./img/Photo-1.png" alt="">
+            <div class="team__main-content">
             </div>
-            <ul class="products__filter">
-                <li class="products__item">
-                    <a href="" class="products__link products__link_active">all</a>
-                </li>
-                <li class="products__item">
-                    <a href="" class="products__link">print template</a>
-                </li>
-                <li class="products__item">
-                    <a href="" class="products__link">web template</a>
-                </li>
-                <li class="products__item">
-                    <a href="" class="products__link">user interface</a>
-                </li>
-                <li class="products__item">
-                    <a href="" class="products__link">mock-up</a>
-                </li>
-            </ul>
-            <div class="products">
-                <img class="product" src="./img/work-1.jpg" alt="product">
-                <img class="product" src="./img/work-2.jpg" alt="product">
-                <img class="product" src="./img/work-3.jpg" alt="product">
-                <img class="product" src="./img/work-4.jpg" alt="product">
-                <img class="product" src="./img/work-5.jpg" alt="product">
-                <img class="product" src="./img/work-6.jpg" alt="product">
-                <img class="product" src="./img/work-7.jpg" alt="product">
-                <img class="product" src="./img/work-8.jpg" alt="product">
-            </div>
-        </section>
-        <section class="section team">
-            <div class="team__header">
-                <h2 class="team__heading ">Meet our team</h2>
-                <p class="team__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod
-                    tempor incididut labore Ui / Ux , print template.</p>
-                <hr class="header__line team__line">
-            </div>
-            <div class="team__members">
-                <img class="team__selected-photo" src="./img/Photo-1.png" alt="">
-                <div class="team__main-content">
-                </div>
-                <div class="team__selected-info">
-                    <span class="team__selected-name">mark waugh</span>
-                    <p class="team__selected-about">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing
-                        eiusmod tempor
-                        <br>ncididut labore Ui / Ux , print template.
-                    </p>
-                    <div class="team__selected-links">
-                        <a class="team__selected-link" href="">Facebook</a>
-                        <a class="team__selected-link" href="">Dribble</a>
-                        <a class="team__selected-link" href="">Behance</a>
-                        <a class="team__selected-link" href="">Twiter</a>
-                    </div>
-                    <section class="members">
-                        <div class="member">
-                            <h3 class="member__name">sokina jue</h3>
-                            <img class="member__photo" src="./img/Photo-meat.png" alt="Фото сотрудника">
-                        </div>
-                        <div class="member">
-                            <h3 class="member__name"></h3>
-                            <img class="member__photo" src="./img/Photo-meat.png" alt="Фото сотрудника">
-                        </div>
-                        <div class="member">
-                            <h3 class="member__name"></h3>
-                            <img class="member__photo" src="./img/Photo-meat.png" alt="Фото сотрудника">
-                        </div>
-                        <div class="member">
-                            <h3 class="member__name"></h3>
-                            <img class="member__photo" src="./img/Photo-meat.png" alt="Фото сотрудника">
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </section>
-        <section class="section subscribe">
-            <div class="subscribe___header">
-                <h2 class="subscribe___heading section-heading">Design tips, tricks, and freebies. Delivered weekly.
-                </h2>
-                <p class="subscribe___text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.
+            <div class="team__selected-info">
+                <span class="team__selected-name">mark waugh</span>
+                <p class="team__selected-about">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed
+                    dooing
+                    eiusmod tempor
+                    <br>ncididut labore Ui / Ux , print template.
                 </p>
-                <form class="subscribe__form" action="" method="post">
-                    <input class="subscribe__input" type="email" name="email" placeholder="Email Address..." required>
-                    <button class="subscribe__button" type="submit">subscribe</button>
-                </form>
-            </div>
-        </section>
-        <div class="feedback-contacts">
-            <div class="feedback__left-box"></div>
-            <section class="feedback">
-                <div class="feedback__header">
-                    <h2 class="feedback__heading">get in touch</h2>
-                    <p class="section-heading feedback__text" id="contacts">Lorem ipsum dolor sit amet, consectetur
-                        adipis cing elit, sed do eiusmod
-                        tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut
-                        labore et. ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                    <hr class="header__line feedback__line">
+                <div class="team__selected-links">
+                    <a class="team__selected-link" href="">Facebook</a>
+                    <a class="team__selected-link" href="">Dribble</a>
+                    <a class="team__selected-link" href="">Behance</a>
+                    <a class="team__selected-link" href="">Twiter</a>
                 </div>
-                <section class="feedback__body section">
-                    <form class="feedback__form" action="" method="post">
-                        <input class="feedback__input feedback__name" type="text" name="name" placeholder="Name"
-                            required>
-                        <input class="feedback__input feedback__email" type="text" name="email" placeholder="Your Mail"
-                            required>
-                        <textarea class="feedback__input feedback__message" name="message" cols="30" rows="10"
-                            placeholder="Type your message"></textarea>
-                        <button class="feedback__button" type="submit">Send message</button>
-                    </form>
+                <section class="members">
+                    <div class="member">
+                        <h3 class="member__name">sokina jue</h3>
+                        <img class="member__photo" src="./img/Photo-meat.png" alt="Фото сотрудника">
+                    </div>
+                    <div class="member">
+                        <h3 class="member__name"></h3>
+                        <img class="member__photo" src="./img/Photo-meat.png" alt="Фото сотрудника">
+                    </div>
+                    <div class="member">
+                        <h3 class="member__name"></h3>
+                        <img class="member__photo" src="./img/Photo-meat.png" alt="Фото сотрудника">
+                    </div>
+                    <div class="member">
+                        <h3 class="member__name"></h3>
+                        <img class="member__photo" src="./img/Photo-meat.png" alt="Фото сотрудника">
+                    </div>
                 </section>
-            </section>
-            <section class="contacts">
-                <h2 class="contacts__heading section-heading">contact info</h2>
-                <address class="contact__address">
-                    <p class="contacts__line">Jalalabad 24 / A, Ambaarkhana, Sylhet, <br>Bangladesh</p>
-                    <p class="contacts__line">redwan@deviserweb.com</p>
-                    <p class="contacts__line">(+88) 017 617 46373</p>
-                </address>
-            </section>
+            </div>
         </div>
+    </section>
+    <section class="section subscribe">
+        <div class="subscribe___header">
+            <h2 class="subscribe___heading section-heading">Design tips, tricks, and freebies. Delivered weekly.
+            </h2>
+            <p class="subscribe___text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do
+                eiusmod.
+            </p>
+            <form class="subscribe__form" action="" method="post">
+                <input class="subscribe__input" type="email" name="email" placeholder="Email Address..." required>
+                <button class="subscribe__button" type="submit">subscribe</button>
+            </form>
+        </div>
+    </section>
+    <div class="feedback-contacts">
+        <div class="feedback__left-box"></div>
+        <section class="feedback" id="contact">
+            <div class="feedback__header">
+                <h2 class="feedback__heading">get in touch</h2>
+                <p class="section-heading feedback__text" id="contacts">Lorem ipsum dolor sit amet, consectetur
+                    adipis cing elit, sed do eiusmod
+                    tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut
+                    labore et. ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                <hr class="header__line feedback__line">
+            </div>
+            <section class="feedback__body section">
+                <form class="feedback__form" action="services.js" method="post">
+                    <input class="feedback__input feedback__name" type="text" name="name" placeholder="Name" required>
+                    <input class="feedback__input feedback__email" type="text" name="email" placeholder="Your Mail"
+                        required>
+                    <textarea class="feedback__input feedback__message" name="message" cols="30" rows="10"
+                        placeholder="Type your message"></textarea>
+                    <button class="feedback__button" type="submit">Send message</button>
+                </form>
+            </section>
+        </section>
+        <section class="contacts">
+            <h2 class="contacts__heading section-heading">contact info</h2>
+            <address class="contact__address">
+                <p class="contacts__line">Jalalabad 24 / A, Ambaarkhana, Sylhet, <br>Bangladesh</p>
+                <p class="contacts__line">redwan@deviserweb.com</p>
+                <p class="contacts__line">(+88) 017 617 46373</p>
+            </address>
+        </section>
+    </div>
     </main>
     <footer class="footer">
         <div class="footer__content section">
             <p class="footer__copyright"> &copy; Copyright @Junaed 2023, All rights reserved.</p>
             <div class="footer__social-links">
-                <a class="footer__link" href="https://investor.twitterinc.com/secure.aspx?return=%2fhome%2fdefault.aspx">
+                <a class="footer__link"
+                    href="https://investor.twitterinc.com/secure.aspx?return=%2fhome%2fdefault.aspx">
                     <img src="./img/Twitter_Rounded_Solid-2.svg" alt="лого твиттера">
                 </a>
                 <a class="footer__link" href="https://xn--b1ae3a1a.xn--p1ai/linkedin">

@@ -86,7 +86,24 @@
     text-decoration: none;
 }
 
-/* intro */
+/* popupMenu */
+
+.popup-menu__button {
+    z-index: 1;
+    display: none;
+    padding: 0;
+    min-width: 140px;
+    height: 40px;
+    background-image: url('../img/menu.png');
+    background-size: 100% 100%;
+    background-color: #F6F2F2;
+}
+
+.popup-menu__list {
+    display: none;
+}
+
+/* intro  */
 
 .page__content {
     display: block;
@@ -227,7 +244,7 @@
 
 /* service */
 
-.service{
+.service {
     display: flex;
     flex-wrap: wrap;
     border-bottom: 1px solid #ECECEC;
@@ -855,54 +872,139 @@
 }
 
 @media screen and (max-width: 908px) {
+
     .services__lead,
-    .services__blocks{
+    .services__blocks {
         width: 100%;
         max-width: 100%;
     }
 
-    .subscribe___heading{
+    .subscribe___heading {
         line-height: 50px;
     }
 }
 
-@media screen and (max-width: 900px){
-    .products__item{
+@media screen and (max-width: 900px) {
+    .products__item {
         width: 100%;
         text-align: center;
     }
 
-    .service{
+    .service {
         justify-content: center;
     }
 
+}
+
+@media screen and (max-width: 855px) {
+    .team__members {
+        grid-template-columns: 100%;
+        grid-template-columns: auto;
     }
 
-    @media screen and (max-width: 855px){
-        .team__members{
-            grid-template-columns: 100%;
-            grid-template-columns: auto;
-        }
-
-        .team__selected-photo{
-            grid-row: 1 / 2;
-            margin-bottom: 18px;
-            margin-right: 0;
-        }
-
-        .team__selected-info{
-            grid-row: 1 / 2;
-            grid-row: 2 / 3;
-        }
-
-        .members{
-            grid-column: 1 / 2;
-            grid-row: 3 / 4;
-        }
+    .team__selected-photo {
+        grid-row: 1 / 2;
+        margin-bottom: 18px;
+        margin-right: 0;
     }
 
-    @media screen and (max-width: 700px){
-        .feedback__email{
-            margin-left: 10px;
-        }
+    .team__selected-info {
+        grid-row: 1 / 2;
+        grid-row: 2 / 3;
     }
+
+    .members {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .feedback__email {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .popup-menu__button {
+        display: block;
+        z-index: 1;
+        padding: 0;
+        min-width: 140px;
+        height: 40px;
+        background-image: url('../img/menu.png');
+        background-size: 100% 100%;
+        background-color: #F6F2F2;
+    }
+
+    .menu {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        visibility: hidden;
+        padding: 0;
+        width: 1px;
+        background-color: #fff;
+    }
+
+    .popup-menu {
+        position: relative;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        min-height: 90px;
+    }
+
+    .popup-menu__list {
+        visibility: visible;
+        position: absolute;
+        bottom: 0;
+        transform: translateY(100%);
+        z-index: -1;
+        min-width: 140px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: stretch;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: #2C2C2C;
+        transition: visibility, transform 1s, 0.5s ease-in-out;
+    }
+
+    .popup-menu__list {
+        visibility: hidden;
+    }
+
+    .hide-popup {
+        transform: translateY(-50%);
+        z-index: -1;
+        visibility: hidden;
+    }
+
+    .popup-menu__item {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        min-height: 90px;
+    }
+
+    .popup-menu__item:hover {
+        background-color: #FF3F40;
+    }
+
+    .popup-menu__link {
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+        color: #F6F2F2;
+        font-size: 14px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+}
